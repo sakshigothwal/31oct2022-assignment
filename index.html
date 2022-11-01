@@ -5,13 +5,14 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>css form day - 1</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <style>
             body{
                 background:#F3E0E2;
                 margin:0px;
                 font-family: Arial, Helvetica, sans-serif;
             }
-            form.myform{
+            .myform{
                 width: 60%;
                 height: 500px;
                 margin: 150px auto;
@@ -19,27 +20,88 @@
                 overflow: hidden;
                 box-shadow: 0px 10px 10px 5px rgba(0,0,0,0.3);
                 clear: both;
+                text-align: center;
             }
-            form.myform > div{
+            .myform > div{
                 width: 50%;
                 float: left;
                 height: 100%;
             }
-            div.white{
+            .white{
                 background-color: #FFFF;
             }
-            div.pink{
-                color: white;
+            .pink{
+                color: #ffff;
                 background-image: -webkit-linear-gradient(left,#FF464C,#FF416B);
-                text-align: center;
+               
                 text-shadow: 0px 0px 10px rgba(0,0,0,0.5);
-            
+             }
+             .social_icons{
+                width: 40px;
+                height: 40px;
+                display: inline-block;
+                line-height: 40px;
+                border-radius: 40px;
+                border:1px solid #303030;
+                color: #303030;
+                font-size: 1.2em;
+
+             }
+             .myform input[type="text"] , .myform input[type="password"]{
+                width: 97%;
+                padding: 10px 0px 10px 10px;
+                margin:5px 0px;
+                border: none;
+                background: #EFEFEF;
             }
+             .myform input[type="submit"]{
+                background: #FF4A27;
+                color:white;
+                border:none;
+                font-weight: bold;
+                padding: 10px 30px;
+                border-radius: 20px;
+                cursor: pointer;
+            }
+            .forget{
+                color:#303030;
+                text-decoration: none;
+            }
+             
         </style>
     </head>
     <body>
         <form class="myform">
-            <div class="white"></div>
+            <div class="white">
+                <div style="margin: 60px 60px;">
+                    <h1>Login</h1>
+                    <a href="#" class="social_icons">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social_icons">
+                        <i class="fa-brands fa-twitter"></i>
+
+                    </a>
+                    <p>
+                        or use your account
+                    </p>
+                    <input type="text" placeholder="Email" name="email" />
+                    <input type="password" placeholder="password" name="password"/>
+                    <div style="margin: 20px 0px">
+                        <a href="#" class="forget">Forget your password ?</a>
+
+                    </div>
+                   
+                    <div>
+                        <input type="submit" value="LOG IN" name="submit" />
+
+                    </div>
+                   
+
+
+                </div>
+                
+            </div>
             <div class="pink">
                 <div style="margin: 140px 69px;">
                   <h1>HTML CSS LOGIN FORM </h1>
@@ -48,8 +110,6 @@
                 
             </div>
         </form>
-            
-
-        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js" integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     </body>
     </html>
